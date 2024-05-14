@@ -1,0 +1,11 @@
+
+
+article {
+    left: 0px;
+    position: absolute;
+
+   /*background:#0000FF*/
+    background: hsl(189, 67%, 50%);
+    text-align: center;
+    width: 100%;
+}
