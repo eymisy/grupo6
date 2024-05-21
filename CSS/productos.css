@@ -8,30 +8,26 @@ nav {
 }
 
 main {
-    height: 80px; position: relative;
+    height: 80px;
+    position: relative;
 }
 
 article {
     right: 0px;
     position: absolute;
     background: #0000aa;
-    width: 80%;
+    width: 88%;
 }
 
-section {
-    display: inline-block;
-    margin: 5px;
+section {    
     background: #a0a000;
-    width: 25%;
-    text-align: center;
 }
 
 aside {
     left: 0px;
     position: absolute;
     background: #00a0a0;
-    text-align: center;
-    width: 20%;
+    width: 12%;
 }
 
 footer {
@@ -41,7 +37,97 @@ footer {
 
 p {color: greenyellow;}
 
-img {
+#producto {    
+    background: skyblue;
+    /*
     margin: 10px;
-    width: 90%;
+    width: 23%;
+    text-align: center;
+    display: inline-block;
+    */
+}
+
+.flexbox-container {
+    height: 95vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.flexbox-item {
+    border: 1px solid black;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.item {
+    min-height: 50px;
+    align-self: center;
+    flex: 1 1 15;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    /*
+    grid-template: 
+        "imagen" 60px
+        "calificacion" 30px
+        "nombre" 20px
+        "precio" 10px
+        "kilo" 5px
+        "carrito" 1px
+        100px;
+    */
+}
+
+.grid-item {
+    border: 4px solid black;
+}
+
+.box {
+    
+}
+
+.main-logo {
+    display: flex;
+    background-color: #006f81;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+/*    position: absolute;*/
+}
+
+.logo {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.cart {
+    background-color: #41cef8;
+    padding: 5px 5px;
+    border-radius: 8px;
+    position: relative;
+/*
+    right: 0px;
+    top: 15%;
+*/
+}
+
+.cart > i {
+    background-color: #0097af;
+    border: 2px solid #abf0fd;
+    border-radius: 4px;
+    padding: 5px;
 }

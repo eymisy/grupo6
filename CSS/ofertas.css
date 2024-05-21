@@ -1,11 +1,75 @@
+body {
+    background-color: #99f;
+    min-height: 100vh;
+}
 
+header, footer {
+    padding: 2px;
+    background-color: #dd1199;
+}
 
-article {
-    left: 0px;
-    position: absolute;
+main {
+    padding: 2px;
+    background-color: blue;
+}
 
-   /*background:#0000FF*/
-    background: hsl(189, 67%, 50%);
+section {
     text-align: center;
-    width: 100%;
+}
+
+.oferta {
+    background-color: green;
+    height: 350px;
+    overflow: hidden;
+}
+
+.oferta > div {
+    background-color: purple;
+    display: inline-block;
+}
+
+article > img:hover {
+    transform: scale(0.9, 0.9);
+}
+
+#selector > div {
+    display: inline-block;
+}
+
+#selector .item-1 {
+    color: white;
+}
+
+.main-logo {
+    display: flex;
+    background-color: #006f81;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+/*    position: absolute;*/
+}
+
+.logo {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.cart {
+    background-color: #41cef8;
+    padding: 5px 5px;
+    border-radius: 8px;
+    position: relative;
+/*
+    right: 0px;
+    top: 15%;
+*/
+}
+
+.cart > i {
+    background-color: #0097af;
+    border: 2px solid #abf0fd;
+    border-radius: 4px;
+    padding: 5px;
 }
