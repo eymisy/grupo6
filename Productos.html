@@ -13,37 +13,92 @@
 </head>
 <body>
     <header>
-        codigo
+        <div class="main-logo">
+            <div class="logo">
+                <a href="Index.html"><img src="IMG/LogoIco.png" alt="ChangoPay"></a>
+            </div>
+            <div class="cart">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+<!--        <i class="fa-brands fa-youtube"></i>-->
         <nav class="nav">
             <ul class="nav__ul">
                 <li class="nav__li"><i class="fas fa-home"></i><a href="Index.html">Pagina inicial</a></li>
                 <li class="nav__li"><i class="fas fa-info-circle"></i><a href="Informacion.html">Informacion</a></li>
-                <li class="nav__li"><i class="fas fa-user"></i><a href="Inicio.html">Registro</a></li>
-                <li class="nav__li"><i class="fas fa-question-circle"></i><a href="Ofertas.html">Ofertas</a></li>
-                <li class="nav__li"><i class="fas fa-bars"></i><a href="Productos.html">Productos</a></li>
+                <li class="nav__li"><i class="fa-solid fa-address-card"></i><a href="Inicio.html">Registro</a></li>
+                <li class="nav__li"><i class="fas fa-newspaper"></i><a href="Ofertas.html">Ofertas</a></li>
+                <li class="nav__li"><i class="fas fa-store"></i><a href="Productos.html">Productos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <article>
-        bienvenido <br>
-    <!--
-            <h1>Bienvenido</h1>
-            <p>estas en un nuevo servicio de compras</p>
-    -->
             <section>
-                <div><img src="IMG/bananas.png" alt="bananas"></div>
-                <div><span>calificacion</span></div>
-                <div><span>nombre del producto</span></div>
-                <div><span>precio</span></div>
-                <div><span>precio por kg</span></div>
-                <div><span>carrito</span></div>
+            <div class="orden">
+                <label for="order">Ordenar por:</label>
+                <select name="order" id="order">
+                    <option value="none" selected></option>
+                    <option value="alfabe">A-Z</option>
+                    <option value="invent">Mas reciente</option>
+                    <option value="releva">Mas popular</option>
+                    <option value="ventas">Mas vendido</option>
+                </select>
+            </div>
             </section>
-            <section>contenido</section>
-            <section>contenido</section>
-            <section>contenido</section>
+            <br>
+            <section class="grid-container">
+                <div id="producto" class="grid-item flexbox-container box">
+                    <div class="flexbox-item item"><img src="IMG/bananas.png" alt="bananas"></div>
+                    <div class="flexbox-item item"><span>calificacion</span></div>
+                    <div class="flexbox-item item"><span>nombre del producto</span></div>
+                    <div class="flexbox-item item"><span>precio</span></div>
+                    <div class="flexbox-item item"><span>precio por kg</span></div>
+                    <div class="flexbox-item item"><span>carrito</span></div>
+                </div>
+                <div id="producto" class="grid-item box">marciano</div>
+                <div id="producto" class="grid-item box">marciano</div>
+                <div id="producto" class="grid-item box">marciano</div>
+                <div id="producto" class="grid-item box">marciano</div>
+                <div id="producto" class="grid-item box">marciano</div>
+                <div id="producto" class="grid-item box">marciano</div>
+                <div id="producto" class="grid-item box">marciano</div>
+                <div id="producto" class="grid-item box">marciano</div>
+                <div id="producto" class="grid-item box">marciano</div>
+                <div id="producto" class="grid-item box">marciano</div>
+                <div id="producto" class="grid-item box">marciano</div>
+            </section>
         </article>
-        <aside>Aparte<br><br><br></aside>
+        <aside>
+            <fieldset>
+                <legend>Filtros</legend>
+                Productos <br>
+                <input type="checkbox" id="alim" name="filter" value="alimentos">
+                <label for="alim">Alimentos</label><br>
+                
+                <input type="checkbox" id="beb" name="filter" value="bebidas">
+                <label for="beb">Bebidas</label><br>
+                
+                <input type="checkbox" id="limp" name="filter" value="limpieza">
+                <label for="limp">Limpieza</label><br>
+                
+                <input type="checkbox" id="banio" name="filter" value="banio">
+                <label for="banio">Baño</label><br>
+                
+                <br> Oferta <br>
+                <input type="checkbox" id="desc" name="filter" value="descuento">
+                <label for="desc">Descuento</label><br>
+                
+                <input type="checkbox" id="prom" name="filter" value="promo">
+                <label for="prom">Promo</label><br>
+                
+                <input type="checkbox" id="limt" name="filter" value="limitado">
+                <label for="limt">Limitado</label><br>
+            </fieldset>
+            <br>
+        </aside>
     </main>
     <footer>Final</footer>
 </body>
