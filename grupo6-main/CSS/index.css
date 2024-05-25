@@ -1,0 +1,126 @@
+main {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+/*position: absolute;*/
+    padding-bottom: 3em;
+    min-height: 100vh;
+ position: relative;
+}
+
+article {
+    left: 0px;
+    /*position: absolute;*/
+    background: #2cbcd5;
+    text-align: center;
+    width: 80%;
+    font-size: 1.3rem;
+     font-weight: 200;
+    font-style: italic;
+    z-index: 1;
+    }
+    
+}
+
+section {
+    margin: 10px;
+    background: #b0b48c;
+}
+
+aside {
+    right: 0px;
+    position: absolute;
+    z-index: -1;
+    /*text-align: center;*/
+    width: 20%;
+}
+
+footer {
+   /* background: #a0a0a0;*/
+    text-align: center;
+    padding-top: 25px;
+    background-color: rgba(76, 88, 121, 0.5);
+    font-family:Arial, Helvetica, sans-serif;
+    color: #f5fffa;
+}
+
+.promo_top {
+    background-color: #4488ee;
+}
+
+/*
+.promo {
+//list-style: none;
+}
+*/
+
+.promo__li {
+    display: inline-block;
+    /*text-align: center;*/
+    padding: 9px;
+    /*color: white;*/
+}
+
+@media(max-width: 900px){
+    main img {width: 70%;}
+}
+/*-------------*/
+.social{
+
+    bottom: 20px;
+    padding: 10px;   
+}
+
+.social a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    margin: 0 15px 10px 0;
+    background-color: #0097af;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #052c4d;
+    font-size: 25px;
+}
+.social a:hover{
+  background-color:#fff
+}
+/*-----------*/
+.slide{
+    width:95%;
+    margin: auto;
+    max-width: 400%; 
+    
+overflow: hidden;
+ }
+ .slide ul{
+     margin: 1%;
+     padding: 0px;
+     width:400%;
+     display: flex;
+     height:100%; 
+     animation: slider 20s infinite cubic-bezier(0.55, 0.085, 0.68, 0.53);
+     /*animation-timing-function: ease-in;*/
+  }
+  .slide li{
+ list-style: none;
+ width:100%;
+  }
+  
+  .slide img{
+    width:100%;
+  }
+      
+  @keyframes slider{
+ 0% {margin-left:0;}
+ 20% {margin-left:0;}
+ 25% {margin-left:-100%;}
+ 45% {margin-left:-100%;}
+ 50% {margin-left:-200%;}
+ 70% {margin-left:-200%;}
+ 75% {margin-left:-300%;}
+ 100% {margin-left:-300%;}
+
+     }
