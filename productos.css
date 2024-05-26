@@ -1,0 +1,149 @@
+.container {
+    display: grid;
+    grid-template: "left contenido" 1fr
+        "footer footer" 100px
+        / 19% 80%;
+    grid-gap: 1%;
+    height: 100vh;
+}
+
+.left {
+    grid-area: left;
+    padding: 10px;
+    background-color: rgba(41, 93, 124, 0.649);
+    border-radius: 10px;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.footer {
+    grid-area: footer;
+    font-size: 25px;
+    padding-top: 25px ;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(50, 188, 128, 0.649);
+}
+
+.item {
+    color: white;
+    margin: 0;
+}
+
+#section-item {
+    padding: 10px;
+    background-color: rgba(209, 194, 78, 0.649);
+    border-radius: 10px;
+}
+
+.article-items {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-gap: 5px 5px;
+    padding: 30px;
+}
+
+.article-order {
+    text-align: right;
+}
+
+article img {
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    border: solid black;
+    border-radius: 5px;
+}
+
+article img:hover {
+    transform: scale(0.9, 0.9);
+}
+
+.producto {
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    height: auto;
+    padding: 5px;
+    background-color: grey;
+}
+
+.article-order {
+    text-align: center;
+    margin: 20px;
+}
+
+.article-order label {
+    font-size: 30px;
+}
+
+legend {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #f5fffa;
+    border-color: transparent;
+}
+
+label {
+  font-size: 1.125rem;
+  text-shadow: 1px 1px 1px rgba(0,0,0,10)
+}
+
+span {
+    color: white;
+    width: 50px;
+    position: sticky;
+    bottom: 0px;
+    right: 0px;
+}
+
+@media only screen and (max-width: 915px) {
+    .article-items {
+        grid-template-columns: 50% 50%;
+    }
+}
+    
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template: "left" 150px
+            "contenido" 1fr
+            "footer" 100px
+            / 100vw;
+    }
+        
+    .left {
+        overflow: scroll;
+    }
+    
+    .orden, .orden > label, p, .producto {
+        font-size: 15px;
+    } 
+
+    main img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/*
+main {
+    height: 80px;
+    position: relative;
+}
+
+#producto {    
+    background: skyblue;
+    margin: 10px;
+    width: 23%;
+    text-align: center;
+    display: inline-block;
+}
+*/
