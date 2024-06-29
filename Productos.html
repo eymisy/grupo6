@@ -9,6 +9,7 @@
     <link rel="icon" href="IMG/Chango.ico">
     <link rel="stylesheet" href="CSS/productos.css">
     <link rel="stylesheet" href="CSS/general-style.css">
+    <script src="JS/general-code.js"></script>
     <script src="https://kit.fontawesome.com/01a7edaade.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,9 +19,9 @@
                 <a href="Index.html"><img src="IMG/LogoIco.png" alt="ChangoPay"></a>
             </div>
             <div class="cart">
-                <i class="fas fa-user"></i>
-                <i class="fas fa-shopping-cart"></i>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-user" onclick="redirect('Usuario.html');"></i>
+                <i class="fas fa-shopping-cart" onclick="redirect('Productos.html');"></i>
+                <i class="fas fa-bars" onclick="mostrar();" title="mostrar/ocultar navegador"></i>
             </div>
         </div>
         <!--        <i class="fa-brands fa-youtube"></i>-->
@@ -76,63 +77,100 @@
             </article>-->
             <article class="article-items">
                 <div class="producto">
-                    <div><p>BANANA</p></div>
-                    <div><img src="IMG/bananas.png" alt="bananas"></div>
+                     <div><p>HELADO</p></div>
+                        <div><img src="IMG/promociones/helado-2.jpg" alt="HELADO HÄAGEN-DAZS"></div>
+                        <div class="info-product">
+                            <h4>OFERTA</h4>
+                            <h3 class="price">$12860</h3>
+                            <button><p>Añadir al carrito</p></button>
+                        </div>
                 </div>
-
-                <div class="producto">
-                    <div><p>PEREJIL</p></div>
-                    <div><img src="IMG/perejil.png" alt="perejil"></div>
-                </div>
-
-                <div class="producto">
-                    <div><p>CARNE</p></div>
-                    <div><img src="IMG/carne.png" alt="carne"></div>
-                </div>
-
-                <div class="producto">
-                    <div><p>SHAMPOO</p></div>
-                    <div><img src="IMG/shamp.png" alt="shampoo"></div>
-                </div>
-
-                <div class="producto">
-                    <div><p>JABÓN</p></div>
-                    <div><img src="IMG/jab.png" alt="jabon"></div>
-                </div>
-
-                <div class="producto">
-                    <div><p>LIMPIADOR</p></div>
-                    <div><img src="IMG/limp.png" alt="limpiador"></div>
-                </div>
+            
 
                 <div class="producto">
                     <div><p>QUESO</p></div>
-                    <div><img src="IMG/queso.png" alt="queso"></div>
+                        <div><img src="IMG/Lacteos/queso-portsalut.jpg" alt="QUESO PORT SALLUT"></div>
+                        <div class="info-product">
+                            <h4>OFERTA</h4>
+                            <h3 class="price">$8360</h3>
+                            <button><p>Añadir al carrito</p></button>
+                        </div>
                 </div>
 
                 <div class="producto">
+                    <div><p>CREMA</p></div>
+                    <div><img src="IMG/Lacteos/crema-de-leche.jpg" alt="CREMA DE LECHE"></div>
+                    <div class="info-product">
+                        <h4>OFERTA</h4>
+                        <h3 class="price">$3050</h3>
+                        <button><p>Añadir al carrito</p></button>
+                    </div>
+                </div>
+
+
+                <div class="producto">
+                    <div><p>DULCE DE LECHE</p></div>
+                    <div><img src="IMG/Lacteos/dulce_de_leche.jpg" alt="DULCE DE LECHE"></div>
+                    <div class="info-product">
+                        <h4>OFERTA</h4>
+                        <h3 class="price">$8700</h3>
+                        <button><P>Añadir al carrito</P></button>
+				    </div>
+                </div>
+                <div class="producto">
                     <div><p>CREMA DE LECHE</p></div>
-                    <div><img src="IMG/crema_de_leche.png" alt="crema de leche"></div>
+                    <div><img src="IMG/Lacteos/cre-tonadita.jpg" alt="CREMA DE LECHE TONADITA"></div>
+                    <div class="info-product">
+                        <h4>OFERTA</h4>
+                        <h3 class="price">$3050</h3>
+                        <button><p>Añadir al carrito</p></button>
+				    </div>
+                </div>
+                    <div class="producto">
+                    <div><p>YOGHURT SER</p></div>
+                    <div><img src="IMG/Lacteos/yoghurt-ser.jpg" alt="YOGHURT SER"></div>
+                    <div class="info-product">
+                        <h4>OFERTA</h4>
+                        <h3 class="price">$2230</h3>
+                        <button><p>Añadir al carrito</p></button>
+				    </div>
+                </div>
+                <div class="producto">
+                    <div><p>QUESO</p></div>
+                    <div><img src="IMG/Lacteos/queso.png" alt="queso"></div>
+                    <div class="info-product">
+                        <h4>OFERTA</h4>
+                        <h3 class="price">$2230</h3>
+                        <button><p>Añadir al carrito</p></button>
+				    </div>
+                </div>
+                
+
+                <div class="producto">
+                    <div><p>CREMA DE LECHE</p></div>
+                    <div><img src="IMG/Lacteos/Crema-Batida.png" alt="crema de leche"></div>
+                    </div>
+                </div
                 </div>
 
                 <div class="producto">
                     <div><p>DULCE DE LECHE</p></div>
-                    <div><img src="IMG/dulce_de_leche.png" alt="dulce de leche"></div>
+                    <div><img src="IMG/Lacteos/dulce_de_leche.png" alt="dulce de leche"></div>
                 </div>
 
                 <div class="producto">
-                    <div><p>YOGURT</p></div>
-                    <div><img src="IMG/yogurisimo.jpg" alt="yogurt"></div>
+                    <p>YOGURT</p>
+                    <div><img src="IMG/Lacteos/Yogur_Frutilla.png" alt="yogurt"></div>
                </div>
 
                 <div class="producto">
                     <div><p>BERENJENA</p></div>
-                    <div><img src="IMG/025.jpg" alt="berenjena"></div>
+                    <div><img src="IMG/Verduleria/025.jpg" alt="berenjena"></div>
                 </div>
                 
                 <div class="producto">
-                    <div><p>PALTA</p></div>
-                    <div><img src="IMG/06.jpg" alt="palta"></div>
+                    <p>PALTA</p>
+                    <div><img src="IMG/Verduleria/06.jpg" alt="palta"></div>
                 </div>
             </article>
         </section>
